@@ -18,3 +18,9 @@ void ASpectatorExamplePlayerController::FreeCam()
 {
 	ServerViewSelf();
 }
+
+
+void ASpectatorExamplePlayerController::ViewTarget(AActor *NewViewTarget)
+{
+	SetViewTarget(NewViewTarget);
+}

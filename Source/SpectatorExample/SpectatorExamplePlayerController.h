@@ -14,14 +14,24 @@ class SPECTATOREXAMPLE_API ASpectatorExamplePlayerController : public APlayerCon
 {
 	GENERATED_BODY()
 	
-		UFUNCTION(BlueprintCallable, Category = NetTest)
-		void NextPlayer();
+private:
+	//FViewTargetTransitionParams m_TransitionParams;
 
-	UFUNCTION(BlueprintCallable, Category = NetTest)
-		void PrevPlayer();
+private:
+	UFUNCTION(BlueprintCallable, Category = Camera)
+	void NextPlayer();
 
-	UFUNCTION(BlueprintCallable, Category = NetTest)
-		void FreeCam();
+	UFUNCTION(BlueprintCallable, Category = Camera)
+	void PrevPlayer();
+
+	UFUNCTION(BlueprintCallable, Category = Camera)
+	void FreeCam();
+
+	UFUNCTION(BlueprintCallable, Category = Camera)
+	void ViewTarget(AActor *NewViewTarget);
+
+public:
 	
-	
+	//UFUNCTION(BlueprintCallable, Category = Camera)
+	//void SetCustomViewTargetWithBlend(float BlendTime, EViewTargetBlendFunction BlendFunc, float BlendExp, bool bLockOutgoing);
 };

@@ -2,4 +2,4 @@
 
 
 
-Key - Page Up, Page Down, Home 
+Key - Page Up, Page Down, Home, 1, 2
